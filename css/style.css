@@ -1,0 +1,95 @@
+/* Обнуляющий стиль */
+@import "null.css";
+/* =================================================== */
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+/* =================================================== */
+/* =================================================== */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	font-family: "Roboto", sans-serif;
+}
+.main {
+	max-width: 1020px;
+	margin: 350px auto;
+}
+.who-we-are {
+	background: #5D62B5;
+	border-radius: 40px;
+	position: relative;
+	min-height: 700px;
+}
+.who-we-are::before {
+	content: "";
+	width: 201px;
+   height: 317px;
+	background: url("../img/01.svg") center / cover no-repeat;
+	position: absolute;
+	top: -109px;
+	right: -78px;
+}
+.who-we-are::after {
+	content: "";
+	width: 554px;
+   height: 372px;
+	background:url("../img/02.svg") no-repeat;
+	position: absolute;
+	bottom: -30px;
+	left: 50px;
+}
+.who-we-are__body {
+	padding: 100px 0px 0px 87px;
+	position: relative;
+}
+.who-we-are__subtitle {
+	font-weight: 700;
+   font-size: 12px;
+   line-height: 2;
+	letter-spacing: 2.5px;
+   text-transform: uppercase;
+   color: #F5F5F5;
+	position: relative;
+	padding: 0px 0px 0px 33px;
+	margin: 0px 0px 36px 0px;
+}
+.who-we-are__subtitle::before {
+	content: "";
+	width: 17px;
+   height: 19px;
+	background: url("../img/icon.svg") no-repeat;
+	position: absolute;
+	top: -3px;
+	left: 0px;
+}
+.who-we-are__title {
+	font-weight: 900;
+   font-size: 36px;
+   line-height: 1.17;
+   color: #FFFFFF;
+	max-width: 583px;
+	margin: 0px 0px 40px 0px;
+}
+.who-we-are__text {
+	line-height: 1.5;
+   letter-spacing: 0.15px;
+   color: #F5F5F5;
+	max-width: 846px;
+	position: relative;
+	z-index: 3;
+}
+
+.who-we-are__image { 
+	position: relative;
+	top: 120px;
+	left: 0px;
+	margin: -70px 0px 0px 0px;
+	max-width: 846px;
+	height: 420px; 
+	z-index: 4;
+} 
+.image-who-we-are {
+	border-radius: 40px;
+	max-width: 100%;
+	box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+}
